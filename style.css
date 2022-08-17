@@ -92,7 +92,7 @@ body {
 	background-color: var(--foreground-color);
 	/* transform: translateX(-50%); */
 	width: 14vw;
-	height: 1.3vw;
+	height: 20px;
 	border-radius: 50px;
 	z-index: 2;
 	font-size: 1rem;
@@ -102,10 +102,20 @@ body {
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
 	transition: all 0.03s linear;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .top {
 	top: 0vw;
 }
 .bottom {
 	bottom: 0.1vw;
+}
+/* -------------------------------------------------------------- */
+/* Media Query */
+@media screen and (max-width: 400px) {
+	.paddle {
+		width: 80px;
+	}
 }
